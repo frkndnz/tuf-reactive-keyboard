@@ -1,0 +1,27 @@
+name: Model compatibility report
+description: Tell us whether TUF Reactive Keyboard works on your laptop
+labels: ["compatibility"]
+body:
+  - type: dropdown
+    id: works
+    attributes:
+      label: Does it work? / Çalışıyor mu?
+      options:
+        - "Yes – the keyboard reacts / Evet"
+        - "Partly / Kısmen"
+        - "No – preview only / Hayır, sadece önizleme"
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics / Tanılama
+      description: Click "Copy diagnostics" in the app and paste here. / Uygulamada "Tanılama bilgisini kopyala"ya tıklayıp buraya yapıştır.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Notlar
+      description: Anything odd? Flicker, lag, wrong colours… / Titreme, gecikme, yanlış renk…
